@@ -2118,14 +2118,14 @@ h4 {
 
 .oferta__old {
   text-decoration: line-through;
-  color: #ef4444;
+  color: var(--color-warning);
   font-size: 1.2rem;
 }
 
 .oferta__value {
   font-size: clamp(2.4rem, 4vw, 3rem);
   font-weight: 800;
-  color: var(--color-primary);
+  color: var(--color-success);
 }
 
 .oferta__sub {
