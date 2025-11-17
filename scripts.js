@@ -1,4 +1,41 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // Função para atualizar URLs dos botões baseado no parâmetro da URL
+  function updateButtonUrls() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const param = urlParams.get('param');
+    
+    // URLs de destino baseadas no parâmetro
+    const urls = {
+      '1': 'https://pay.hotmart.com/L102909372T?checkoutMode=10&bid=1763405610771',
+      '2': 'https://www.google.com?zx=1763405694246&no_sw_cr=1'
+    };
+    
+    // Se o parâmetro existe e tem uma URL correspondente
+    if (param && urls[param]) {
+      const targetUrl = urls[param];
+      
+      // Atualizar os 3 botões
+      const btnOffer = document.querySelector('.btn-offer');
+      const btnTestimonials = document.querySelector('.btn-testimonials');
+      const footerCta = document.querySelector('.footer__cta');
+      
+      if (btnOffer) {
+        btnOffer.href = targetUrl;
+      }
+      
+      if (btnTestimonials) {
+        btnTestimonials.href = targetUrl;
+      }
+      
+      if (footerCta) {
+        footerCta.href = targetUrl;
+      }
+    }
+  }
+  
+  // Executar a função ao carregar a página
+  updateButtonUrls();
+
   const ctas = document.querySelectorAll('a[href^="#"]');
 
   ctas.forEach((link) => {
