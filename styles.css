@@ -42,6 +42,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -50,6 +51,7 @@ body {
   color: var(--color-text);
   font-size: 16px;
   line-height: 1.7;
+  overflow-x: hidden;
 }
 
 img {
@@ -125,6 +127,8 @@ h4 {
   color: #000;
   margin-bottom: 20px;
   line-height: 1.2;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .hero__text h2 {
@@ -133,6 +137,8 @@ h4 {
   margin-bottom: 30px;
   line-height: 1.2;
   font-weight: 400; /* Adicione peso da fonte se quiser */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .hero__text p {
@@ -140,6 +146,8 @@ h4 {
   color: #000;
   margin-bottom: 30px;
   line-height: 1.6;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .btn-cta {
@@ -165,7 +173,8 @@ h4 {
 .trust-badges {
   display: flex;
   gap: 20px;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .badge {
@@ -1544,7 +1553,7 @@ h4 {
   display: flex;
   justify-content: center;
   gap: 30px;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 
 .offer-badge {
@@ -2344,7 +2353,7 @@ h4 {
     flex-direction: row;
     gap: 10px;
     justify-content: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
   }
 
   .badge {
@@ -2843,11 +2852,11 @@ h4 {
     gap: 10px;
     align-items: center;
     justify-content: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
   }
 
   .offer-badge {
-    flex: 1;
+    flex: 1 1 140px;
     min-width: 0;
     gap: 8px;
   }
