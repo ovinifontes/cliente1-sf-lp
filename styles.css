@@ -645,13 +645,14 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: transparent;
 }
 
 .gol-triangle {
-  background: #f5f5f5;
-  border-radius: 12px;
-  padding: 50px 40px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  background: transparent;
+  border-radius: 0;
+  padding: 0;
+  box-shadow: none;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -663,6 +664,8 @@ h4 {
   width: 100%;
   max-width: 350px;
   height: auto;
+  border: none; /* Garante que não há borda */
+  outline: none; /* Remove outline se houver */
 }
 
 .solution-conclusion {
@@ -2538,7 +2541,13 @@ h4 {
   }
 
   .gol-triangle {
-    padding: 30px;
+    background: #fff; /* ou transparent */
+    border-radius: 0; /* Remove bordas arredondadas */
+    padding: 0; /* Remove padding */
+    box-shadow: none; /* Remove sombra */
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .solution-conclusion {
