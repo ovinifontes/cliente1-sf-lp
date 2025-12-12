@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Manual da Prosperidade Bíblica | Garanta seu Acesso</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <span class="badge">A JORNADA DA PROSPERIDADE</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Bem-vindo à nova fase da prosperidade: prática, estruturada e possível na vida real, mesmo começando do zero.</h1>
+                <p class="hero-subtitle">Nessa jornada, você será capaz de entender, organizar e conduzir sua vida financeira e suas decisões com clareza, usando princípios testados de mentalidade, estrutura e comportamento, mesmo que hoje você se sinta perdido, travado ou repetindo os mesmos erros há anos.</p>
+                <p class="hero-date">📅 <strong>Dia 21 de dezembro às 19h</strong> AO VIVO</p>
+                <button class="btn-cta" onclick="openFormModal()">Quero garantir meu acesso ao Manual</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Countdown Section -->
+    <section class="countdown-section">
+        <div class="container">
+            <h2 class="countdown-title">Garanta sua vaga agora</h2>
+            <div class="countdown">
+                <div class="countdown-item">
+                    <span class="countdown-number" id="days">00</span>
+                    <span class="countdown-label">Dias</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="hours">00</span>
+                    <span class="countdown-label">Horas</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="minutes">00</span>
+                    <span class="countdown-label">Minutos</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="seconds">00</span>
+                    <span class="countdown-label">Segundos</span>
+                </div>
+            </div>
+            <p class="countdown-tag">MODELO BASEADO EM PRINCÍPIOS BÍBLICOS •</p>
+        </div>
+    </section>
+
+    <!-- Who Should Participate -->
+    <section class="who-section">
+        <div class="container">
+            <h2 class="section-title">QUEM DEVE PARTICIPAR DA JORNADA DA PROSPERIDADE?</h2>
+            
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon">👨‍💼</div>
+                    <h3 class="card-title">Pessoas que trabalham muito</h3>
+                    <p class="card-text">e sentem que ganham dinheiro, mas nunca conseguem avançar, porque não sabem exatamente onde estão errando nas decisões do dia a dia.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">📉</div>
+                    <h3 class="card-title">Pessoas que já tentaram melhorar de vida</h3>
+                    <p class="card-text">leram livros, assistiram vídeos, fizeram cursos… mas continuam aplicando tudo de forma solta, sem um método claro que funcione na prática.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">🧠</div>
+                    <h3 class="card-title">Pessoas cansadas de viver no automático</h3>
+                    <p class="card-text">repetindo ciclos de: Aperto financeiro, Ansiedade, Decisões impulsivas e querem finalmente assumir o controle da própria jornada.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">📊</div>
+                    <h3 class="card-title">Empreendedores, autônomos e profissionais liberais</h3>
+                    <p class="card-text">que até faturam, mas não têm previsibilidade, organização ou tranquilidade, e sabem que o problema não é só dinheiro é estrutura.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">👨‍👩‍👧</div>
+                    <h3 class="card-title">Pessoas comprometidas com evolução real</h3>
+                    <p class="card-text">que querem sair de promessas vazias e construir prosperidade com consciência, responsabilidade e visão de longo prazo.</p>
+                </div>
+            </div>
+
+            <button class="btn-cta-secondary" onclick="openFormModal()">👉 Quero garantir minha vaga na Jornada da Prosperidade</button>
+        </div>
+    </section>
+
+    <!-- Author Section -->
+    <section class="author-section">
+        <div class="container">
+            <div class="author-content">
+                <div class="author-info">
+                    <h2 class="author-title">OLÁ, EU SOU GIOVANI STORINO.</h2>
+                    <p class="author-text">Criador da Jornada da Prosperidade e mentor de pessoas que querem organizar a vida, tomar decisões melhores e construir prosperidade de forma consciente e sustentável.</p>
+                    <p class="author-text">Depois de acompanhar de perto pessoas que trabalham duro, estudam muito e mesmo assim continuam travadas, desenvolvi uma abordagem prática que conecta mentalidade, comportamento, estrutura e ação, sem ilusões e sem atalhos perigosos.</p>
+                    <p class="author-text">A Jornada não nasceu para motivar por alguns dias, ela existe para reorganizar a forma como você pensa, decide e age.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Jornada da Prosperidade | jornadadaprosperidade.com.br</p>
+            <p>Este site usa cookies. Seus dados estão protegidos. Leia os Termos de Uso e a Política de Privacidade</p>
+        </div>
+    </footer>
+
+    <!-- Modal de Formulário -->
+    <div id="formModal" class="modal">
+        <div class="modal-content">
+            <h2 class="modal-title">Garanta sua vaga agora</h2>
+            <form id="leadForm">
+                <div class="form-group">
+                    <input type="text" id="nome" name="nome" placeholder="Insira seu nome" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Insira seu melhor e-mail" required>
+                </div>
+                <div class="form-group">
+                    <div class="phone-input">
+                        <div class="phone-prefix">
+                            <span>🇧🇷</span>
+                            <span>+55</span>
+                            <span>▼</span>
+                        </div>
+                        <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
+                    </div>
+                </div>
+                <button type="submit" class="btn-submit">CONTINUAR</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal de Parabéns -->
+    <div id="successModal" class="modal">
+        <div class="modal-content success-modal">
+            <div class="loading-indicator">
+                <div class="spinner"></div>
+                <span>Processando sua inscrição...</span>
+            </div>
+            <h2 class="success-title">Parabéns, sua inscrição está quase concluída para o <span class="highlight">Jornada da Prosperidade</span></h2>
+            <p class="success-subtitle">Aguarde — estamos encontrando seu grupo...</p>
+            <div class="countdown-circle">
+                <span id="redirectCountdown">5</span>
+            </div>
+            <p class="redirect-text">Redirecionando em <span id="redirectSeconds">5</span> segundo(s)...</p>
+            <a href="https://chat.whatsapp.com/LbXIDOzWmMGG3civVKxiOb?mode=hqrt1" class="btn-whatsapp" target="_blank">Ir agora para o grupo</a>
+            <p class="fallback-text">Se não for redirecionado automaticamente, clique no botão acima.</p>
+        </div>
+    </div>
+
+    <!-- Supabase SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
