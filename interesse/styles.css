@@ -723,7 +723,7 @@ body {
         width: 100%;
         max-width: 100%;
         height: auto;
-        max-height: 350px; /* Altura máxima da imagem */
+        max-height: 330px; /* Altura máxima da imagem */
         object-fit: cover; /* Preenche toda a largura */
         object-position: center top; /* Centraliza horizontalmente e alinha ao topo */
         display: block;
