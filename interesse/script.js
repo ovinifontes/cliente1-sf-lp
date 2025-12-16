@@ -141,10 +141,10 @@ function startRedirectCountdown() {
     }, 1000);
 }
 
-// Countdown timer da página - 21/12/2025 às 19h
+// Countdown timer da página - 22/12/2025 às 20h
 function startCountdown() {
-    // Definir data alvo: 21 de dezembro de 2025 às 19:00 (horário local)
-    const targetDate = new Date('2025-12-21T19:00:00');
+    // Definir data alvo: 22 de dezembro de 2025 às 20:00 (horário local)
+    const targetDate = new Date('2025-12-22T20:00:00');
     
     function updateCountdown() {
         const now = new Date().getTime();
