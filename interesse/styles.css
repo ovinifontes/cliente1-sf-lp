@@ -713,7 +713,7 @@ body {
         display: flex;
         justify-content: center; /* Centraliza horizontalmente */
         align-items: flex-start; /* Alinha ao topo */
-        max-height: 370px; /* Altura máxima para caber nos 860px */
+        max-height: 320px; /* Altura máxima para caber nos 860px */
         overflow: hidden;
     }
     
