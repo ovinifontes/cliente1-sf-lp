@@ -1,16 +1,16 @@
 :root {
-  /* Paleta de Cores Padronizada - Prosperidade Bíblica */
-  --color-primary: #2D8659; /* Verde esmeralda - CTA principal */
-  --color-primary-dark: #1F5F3F; /* Verde escuro - hover e elementos escuros */
-  --color-primary-hover: #1F5F3F; /* Verde escuro para hover */
-  --color-accent: #D4A574; /* Dourado/champagne - destaques especiais */
-  --color-success: #2D8659; /* Verde - valores/confirmação */
-  --color-warning: #C85A5A; /* Vermelho suave - preços antigos */
-  --color-bg-hero: #C7BFB0; /* Bege - hero section */
-  --color-bg-light: #FAF9F7; /* Background claro */
-  --color-bg-dark: #2C2C2C; /* Background escuro seções */
-  --color-text-primary: #2C2C2C; /* Texto principal */
-  --color-text-secondary: #6B6B6B; /* Texto secundário */
+  /* Paleta de Cores Azul - Saúde e Emagrecimento */
+  --color-primary: #00A8E8; /* Azul ciano vibrante - CTA principal (energia, saúde) */
+  --color-primary-dark: #0077B6; /* Azul oceano profundo - hover e elementos escuros */
+  --color-primary-hover: #0096C7; /* Azul médio - hover */
+  --color-accent: #48CAE4; /* Azul claro - destaques especiais */
+  --color-success: #00B4D8; /* Azul turquesa - valores/confirmação */
+  --color-warning: #FF6B6B; /* Coral suave - preços antigos */
+  --color-bg-hero: linear-gradient(135deg, #00D4FF 0%, #0096C7 50%, #0077B6 100%); /* Gradiente azul hero */
+  --color-bg-light: #F0F8FF; /* Azul muito claro - Background claro (frescor) */
+  --color-bg-dark: #0A4D68; /* Azul escuro profissional - Background escuro seções */
+  --color-text-primary: #1E3A5F; /* Azul escuro - Texto principal */
+  --color-text-secondary: #4A6FA5; /* Azul médio - Texto secundário */
   --color-white: #FFFFFF; /* Branco */
   
   /* Border Radius Padronizado */
@@ -47,7 +47,7 @@ html {
 
 body {
   margin: 0;
-  background-color: #f1f5f9;
+  background-color: #E8F4F8; /* Azul muito claro - frescor e limpeza */
   color: var(--color-text);
   font-size: 16px;
   line-height: 1.7;
@@ -85,7 +85,7 @@ h4 {
 
 /* TOP BAR */
 .top-bar {
-  background: #000;
+  background: linear-gradient(135deg, #0A4D68 0%, #0077B6 100%); /* Gradiente azul escuro */
   color: #fff;
   padding: 12px 20px;
   text-align: center;
@@ -99,10 +99,10 @@ h4 {
   margin: 0;
 }
 
-/* HERO SECTION - Estilo da imagem */
+/* HERO SECTION - Gradiente Azul Vibrante */
 .hero {
-  background: #bd9954;
-  color: #000;
+  background: linear-gradient(135deg, #00D4FF 0%, #0096C7 50%, #0077B6 100%); /* Gradiente azul ciano vibrante */
+  color: #fff;
   padding: 60px 20px;
   position: relative;
   overflow: hidden;
@@ -124,27 +124,28 @@ h4 {
 .hero__text h1 {
   font-size: 36px;
   font-weight: 700;
-  color: #000;
+  color: #fff; /* Branco para contraste no gradiente azul */
   margin-bottom: 20px;
   line-height: 1.2;
   word-wrap: break-word;
   overflow-wrap: break-word;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 .hero__text h2 {
-  font-size: 20px; /* Reduza aqui o tamanho */
-  color: #fff; /* Altere aqui a cor */
+  font-size: 20px;
+  color: #E8F4F8; /* Azul muito claro para subtítulo */
   margin-bottom: 30px;
   line-height: 1.2;
-  font-weight: 400; /* Adicione peso da fonte se quiser */
+  font-weight: 400;
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
 
 .hero__text p {
   font-size: clamp(16px, 2vw, 18px);
-  color: #000;
-  margin-bottom: 30px;
+  color: #fff; /* Branco para legibilidade */
+  margin-bottom: 20px;
   line-height: 1.6;
   word-wrap: break-word;
   overflow-wrap: break-word;
@@ -322,9 +323,9 @@ h4 {
   font-weight: 600;
 }
 
-/* FEATURES SECTION */
+/* FEATURES SECTION - Azul claro fresco */
 .section-features {
-  background: #fff;
+  background: linear-gradient(180deg, #E6F3FF 0%, #F0F8FF 50%, #FFFFFF 100%); /* Gradiente azul muito claro para branco */
   padding: 60px 20px;
 }
 
@@ -336,7 +337,7 @@ h4 {
   font-size: clamp(28px, 3.5vw, 38px);
   font-weight: 700;
   text-align: center;
-  color: #000;
+  color: #0A4D68; /* Azul escuro profissional */
   margin-bottom: 50px;
   line-height: 1.4;
   max-width: 1000px;
@@ -352,19 +353,21 @@ h4 {
 }
 
 .feature-card {
-  background: #fff;
+  background: linear-gradient(135deg, #FFFFFF 0%, #E6F3FF 100%); /* Gradiente branco para azul muito claro */
   padding: 35px 25px;
-  border-radius: 6px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 168, 232, 0.12); /* Sombra azul suave */
+  border: 2px solid rgba(0, 168, 232, 0.1); /* Borda azul sutil */
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
   display: flex;
   flex-direction: column;
 }
 
 .feature-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 168, 232, 0.25); /* Sombra azul mais intensa */
+  border-color: rgba(0, 168, 232, 0.3); /* Borda azul mais visível */
 }
 
 .feature-icon {
@@ -384,7 +387,7 @@ h4 {
 .feature-card-title {
   font-size: 20px;
   font-weight: 700;
-  color: #FF6B35;
+  color: #0077B6; /* Azul oceano profundo */
   margin-bottom: 18px;
   text-transform: uppercase;
   letter-spacing: 0.8px;
@@ -394,7 +397,7 @@ h4 {
 .feature-card p {
   font-size: 15px;
   line-height: 1.7;
-  color: #333;
+  color: #1E3A5F; /* Azul escuro para texto */
   margin: 0;
   text-align: left;
   flex-grow: 1;
@@ -403,7 +406,7 @@ h4 {
 .features-intro {
   text-align: center;
   font-size: 17px;
-  color: #000;
+  color: #1E3A5F; /* Azul escuro para texto */
   margin: 40px auto 25px;
   max-width: 850px;
   font-weight: 500;
@@ -431,9 +434,9 @@ h4 {
   transform: translateY(-2px);
 }
 
-/* PROBLEM SECTION - Dark background */
+/* PROBLEM SECTION - Azul escuro profissional */
 .section-problem {
-  background: #000;
+  background: linear-gradient(135deg, #0A4D68 0%, #1E3A5F 100%); /* Gradiente azul escuro */
   color: #fff;
   padding: 80px 20px;
 }
@@ -445,7 +448,7 @@ h4 {
 .problem-title {
   font-size: clamp(32px, 4vw, 42px);
   font-weight: 700;
-  color: #FF6B35;
+  color: #48CAE4; /* Azul ciano claro para destaque */
   margin-bottom: 30px;
   line-height: 1.3;
   text-align: center;
@@ -527,12 +530,13 @@ h4 {
 }
 
 .problems-box {
-  background: #7D3A3A;
+  background: linear-gradient(135deg, #0077B6 0%, #0096C7 100%); /* Gradiente azul médio */
   border-radius: 8px;
   padding: 35px;
   margin: 40px auto;
   max-width: 800px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 20px rgba(0, 151, 199, 0.4);
+  border: 2px solid rgba(72, 202, 228, 0.3);
 }
 
 .problems-list {
@@ -593,14 +597,14 @@ h4 {
   transform: translateY(-2px);
 }
 
-/* SOLUTION SECTION - Triângulo GOL */
+/* SOLUTION SECTION - Azul claro fresco */
 .section-solution {
-  background: #fff;
+  background: #F0F8FF; /* Azul muito claro - frescor */
 }
 
 .solution-main {
   padding: 60px 20px;
-  background: #fff;
+  background: #F0F8FF;
 }
 
 .solution-intro {
@@ -611,7 +615,7 @@ h4 {
 .solution-title {
   font-size: clamp(32px, 4vw, 42px);
   font-weight: 700;
-  color: #000;
+  color: #0A4D68; /* Azul escuro profissional */
   margin-bottom: 40px;
   line-height: 1.3;
   text-align: center;
@@ -632,12 +636,12 @@ h4 {
 .solution-text p {
   font-size: 17px;
   line-height: 1.8;
-  color: #333;
+  color: #1E3A5F; /* Azul escuro para texto */
   margin-bottom: 20px;
 }
 
 .solution-text p strong {
-  color: #000;
+  color: #0077B6; /* Azul oceano para destaque */
   font-weight: 700;
 }
 
@@ -671,7 +675,7 @@ h4 {
 .solution-conclusion {
   font-size: clamp(28px, 3.5vw, 36px);
   font-weight: 700;
-  color: #000;
+  color: #0A4D68; /* Azul escuro profissional */
   text-align: center;
   margin: 60px auto 0;
   max-width: 900px;
@@ -680,7 +684,7 @@ h4 {
 }
 
 .solution-pillars {
-  background: #fff;
+  background: linear-gradient(180deg, #FFFFFF 0%, #E6F3FF 100%); /* Gradiente branco para azul muito claro */
   padding: 60px 20px;
 }
 
@@ -693,8 +697,10 @@ h4 {
 }
 
 .pillar-card {
-  background: #f5f5f5;
+  background: linear-gradient(135deg, #FFFFFF 0%, #E6F3FF 50%, #D6EBFF 100%); /* Gradiente azul suave */
   border-radius: 12px;
+  border: 2px solid rgba(0, 168, 232, 0.15); /* Borda azul sutil */
+  box-shadow: 0 6px 20px rgba(0, 120, 215, 0.12); /* Sombra azul */
   padding: 40px 30px;
   text-align: center;
 }
@@ -708,7 +714,7 @@ h4 {
 .pillar-title {
   font-size: 24px;
   font-weight: 700;
-  color: #FFB800;
+  color: #00A8E8; /* Azul ciano vibrante */
   text-transform: uppercase;
   margin-bottom: 15px;
   letter-spacing: 1px;
@@ -716,15 +722,16 @@ h4 {
 
 .pillar-divider {
   width: 60px;
-  height: 2px;
-  background: #333;
+  height: 3px;
+  background: linear-gradient(90deg, #00A8E8 0%, #48CAE4 100%); /* Gradiente azul */
   margin: 0 auto 20px;
+  border-radius: 2px;
 }
 
 .pillar-card p {
   font-size: 16px;
   line-height: 1.7;
-  color: #333;
+  color: #1E3A5F; /* Azul escuro para texto */
   margin-bottom: 15px;
   text-align: left;
 }
@@ -742,14 +749,14 @@ h4 {
 .solution-subtitle {
   font-size: 20px;
   font-weight: 700;
-  color: #000;
+  color: #1E3A5F; /* Azul escuro */
   margin-bottom: 20px;
 }
 
 .solution-main-text {
   font-size: clamp(24px, 3vw, 32px);
   font-weight: 700;
-  color: #FFB800;
+  color: #00A8E8; /* Azul ciano vibrante */
   line-height: 1.4;
   margin-bottom: 30px;
 }
@@ -773,9 +780,9 @@ h4 {
   transform: translateY(-2px);
 }
 
-/* PRODUCT SECTION - Fundo preto com mockups */
+/* PRODUCT SECTION - Gradiente azul escuro profissional */
 .section-product {
-  background: #000;
+  background: linear-gradient(135deg, #0A4D68 0%, #0077B6 50%, #0096C7 100%); /* Gradiente azul escuro para médio */
   color: #fff;
   padding: 80px 20px;
 }
@@ -796,7 +803,7 @@ h4 {
 .product-title {
   font-size: clamp(32px, 4vw, 42px);
   font-weight: 700;
-  color: #FF6B35;
+  color: #48CAE4; /* Azul ciano claro para destaque */
   margin-bottom: 30px;
   line-height: 1.3;
 }
@@ -994,18 +1001,21 @@ h4 {
 
 /* Cards das Partes */
 .product-part-card {
-  background: #fff;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(230, 243, 255, 0.95) 100%); /* Gradiente branco translúcido para azul */
   border-radius: 12px;
   padding: 35px 30px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 40px rgba(0, 168, 232, 0.25); /* Sombra azul */
+  border: 2px solid rgba(72, 202, 228, 0.3); /* Borda azul ciano */
   display: flex;
   flex-direction: column;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  backdrop-filter: blur(10px); /* Efeito de vidro fosco */
 }
 
 .product-part-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.4);
+  transform: translateY(-8px);
+  box-shadow: 0 15px 50px rgba(0, 168, 232, 0.4); /* Sombra azul mais intensa */
+  border-color: rgba(72, 202, 228, 0.6); /* Borda mais visível */
 }
 
 .part-card-emoji {
@@ -1017,7 +1027,7 @@ h4 {
 .part-card-title {
   font-size: 20px;
   font-weight: 700;
-  color: #000;
+  color: #0077B6; /* Azul oceano profundo */
   margin-bottom: 15px;
   line-height: 1.3;
   text-align: center;
@@ -1025,7 +1035,7 @@ h4 {
 
 .part-card-description {
   font-size: 15px;
-  color: #333;
+  color: #1E3A5F; /* Azul escuro para texto */
   line-height: 1.6;
   margin-bottom: 20px;
   text-align: center;
@@ -1040,7 +1050,7 @@ h4 {
 
 .part-card-list li {
   font-size: 14px;
-  color: #000;
+  color: #1E3A5F; /* Azul escuro para texto */
   margin-bottom: 12px;
   padding-left: 22px;
   position: relative;
@@ -1054,7 +1064,7 @@ h4 {
   left: 0;
   font-size: 20px;
   line-height: 1;
-  color: #20B2AA;
+  color: #00A8E8; /* Azul ciano vibrante */
   font-weight: 900;
 }
 
@@ -1254,7 +1264,7 @@ h4 {
 
 /* OFFER SECTION */
 .section-offer {
-  background: #f5f5f5;
+  background: linear-gradient(180deg, #E6F3FF 0%, #F0F8FF 50%, #FFFFFF 100%); /* Gradiente azul muito claro */
   padding: 80px 20px;
 }
 
@@ -1274,7 +1284,7 @@ h4 {
 .bonus-title-offer {
   font-size: clamp(28px, 3.5vw, 36px);
   font-weight: 700;
-  color: #000;
+  color: #0A4D68; /* Azul escuro profissional */
   text-align: center;
   margin-bottom: 20px;
   line-height: 1.3;
@@ -1283,7 +1293,7 @@ h4 {
 .bonus-text-offer {
   font-size: 18px;
   line-height: 1.7;
-  color: #333;
+  color: #1E3A5F; /* Azul escuro para texto */
   text-align: center;
   margin-bottom: 50px;
   max-width: 900px;
@@ -1299,11 +1309,11 @@ h4 {
 }
 
 .bonus-card-offer {
-  background: #fff;
-  border: 2px solid #e0e0e0;
+  background: linear-gradient(135deg, #FFFFFF 0%, #E6F3FF 100%); /* Gradiente branco para azul muito claro */
+  border: 2px solid rgba(0, 168, 232, 0.2); /* Borda azul */
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 20px rgba(0, 168, 232, 0.15); /* Sombra azul suave */
   display: flex;
   flex-direction: column;
 }
@@ -1341,7 +1351,7 @@ h4 {
 .bonus-card-title-offer {
   font-size: 22px;
   font-weight: 700;
-  color: #000;
+  color: #0077B6; /* Azul oceano profundo */
   margin: 25px 25px 15px;
   line-height: 1.3;
 }
@@ -1349,14 +1359,14 @@ h4 {
 .bonus-card-description-offer {
   font-size: 15px;
   line-height: 1.7;
-  color: #333;
+  color: #1E3A5F; /* Azul escuro para texto */
   margin: 0 25px 20px;
   flex-grow: 1;
 }
 
 .bonus-card-price-offer {
   font-size: 16px;
-  color: #000;
+  color: #1E3A5F; /* Azul escuro */
   margin: 0 25px 25px;
   font-weight: 600;
 }
@@ -1570,16 +1580,17 @@ h4 {
 
 /* Caixa de Oferta */
 .offer-box {
-  background: #fff;
+  background: linear-gradient(135deg, #FFFFFF 0%, #E6F3FF 100%); /* Gradiente branco para azul muito claro */
   border-radius: 12px;
   padding: 40px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 40px rgba(0, 168, 232, 0.2); /* Sombra azul */
+  border: 3px solid rgba(0, 168, 232, 0.3); /* Borda azul destacada */
 }
 
 .offer-box-title {
   font-size: 20px;
   font-weight: 700;
-  color: #000;
+  color: #0A4D68; /* Azul escuro profissional */
   margin-bottom: 30px;
   line-height: 1.4;
 }
@@ -1597,7 +1608,7 @@ h4 {
 .offer-list li {
   font-size: 16px;
   font-weight: 600;
-  color: #000;
+  color: #1E3A5F; /* Azul escuro para texto */
   margin-bottom: 15px;
   padding-left: 30px;
   position: relative;
@@ -1607,7 +1618,7 @@ h4 {
 .offer-list-icon {
   position: absolute;
   left: 0;
-  color: #FF6B35;
+  color: #00A8E8; /* Azul ciano vibrante */
   font-size: 18px;
 }
 
@@ -1624,20 +1635,20 @@ h4 {
 
 .offer-total {
   font-size: 18px;
-  color: #333;
+  color: #1E3A5F; /* Azul escuro */
   margin-bottom: 15px;
   text-align: center;
 }
 
 .offer-total strong {
   font-weight: 700;
-  color: #000;
+  color: #0A4D68; /* Azul escuro profissional */
 }
 
 .offer-price {
   font-size: 64px;
   font-weight: 900;
-  color: var(--color-success);
+  color: #00A8E8; /* Azul ciano vibrante */
   text-align: center;
   margin-bottom: 30px;
   line-height: 1;
@@ -1716,7 +1727,7 @@ h4 {
 
 /* AUTHOR SECTION */
 .section-author {
-  background: #f5f5f5;
+  background: linear-gradient(180deg, #FFFFFF 0%, #E6F3FF 100%); /* Gradiente branco para azul muito claro */
   padding: 80px 20px;
 }
 
@@ -1776,7 +1787,7 @@ h4 {
 .author-title {
   font-size: clamp(32px, 4vw, 42px);
   font-weight: 700;
-  color: #000;
+  color: #0A4D68; /* Azul escuro profissional */
   margin-bottom: 30px;
   line-height: 1.3;
 }
@@ -1784,7 +1795,7 @@ h4 {
 .author-paragraph {
   font-size: 17px;
   line-height: 1.8;
-  color: #333;
+  color: #1E3A5F; /* Azul escuro para texto */
   margin-bottom: 20px;
 }
 
@@ -1951,7 +1962,7 @@ h4 {
 
 /* FAQ SECTION */
 .section-faq {
-  background: #000;
+  background: linear-gradient(135deg, #0A4D68 0%, #0077B6 50%, #0096C7 100%); /* Gradiente azul escuro para médio */
   color: #fff;
   padding: 80px 20px;
 }
@@ -1969,7 +1980,7 @@ h4 {
 .faq-title {
   font-size: clamp(32px, 4vw, 42px);
   font-weight: 700;
-  color: #fff;
+  color: #48CAE4; /* Azul ciano claro para destaque */
   margin-bottom: 15px;
   line-height: 1.3;
 }
@@ -1988,10 +1999,18 @@ h4 {
 }
 
 .faq-item {
-  background: #1a1a1a;
+  background: rgba(10, 77, 104, 0.6); /* Azul escuro translúcido */
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 15px rgba(0, 120, 215, 0.3); /* Sombra azul */
+  border: 1px solid rgba(72, 202, 228, 0.2); /* Borda azul ciano sutil */
+  margin-bottom: 15px;
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.faq-item:hover {
+  background: rgba(10, 77, 104, 0.8); /* Azul mais opaco no hover */
+  border-color: rgba(72, 202, 228, 0.4); /* Borda mais visível */
 }
 
 .faq-question {
@@ -2012,7 +2031,7 @@ h4 {
 }
 
 .faq-question:hover {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(72, 202, 228, 0.15); /* Azul ciano claro no hover */
 }
 
 .faq-question span:first-child {
@@ -2359,8 +2378,8 @@ h4 {
 }
 
 .footer {
-  background: #000;
-  color: rgba(226, 232, 240, 0.75);
+  background: linear-gradient(135deg, #0A4D68 0%, #0077B6 100%); /* Gradiente azul escuro */
+  color: rgba(255, 255, 255, 0.9);
   padding: 2rem 0;
 }
 
