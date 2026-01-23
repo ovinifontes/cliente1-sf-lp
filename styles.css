@@ -153,7 +153,7 @@ h4 {
 
 .btn-cta {
   display: inline-block;
-  background: var(--color-primary);
+  background: #017023;
   color: var(--color-white);
   padding: 18px 40px;
   border-radius: var(--radius-button);
@@ -167,7 +167,7 @@ h4 {
 }
 
 .btn-cta:hover {
-  background: var(--color-primary-hover);
+  background: #01631e;
   transform: translateY(-2px);
 }
 
@@ -199,6 +199,7 @@ h4 {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  filter: brightness(0) invert(1);
 }
 
 .badge-text {
@@ -208,14 +209,14 @@ h4 {
 }
 
 .badge-text strong {
-  color: #000;
+  color: #fff;
   font-size: 14px;
   font-weight: 700;
   display: block;
 }
 
 .badge-text span {
-  color: #000;
+  color: #fff;
   font-size: 13px;
   font-weight: 400;
   display: block;
@@ -2502,10 +2503,12 @@ h4 {
   }
 
   .badge-text strong {
+    color: #fff;
     font-size: 12px;
   }
 
   .badge-text span {
+    color: #fff;
     font-size: 11px;
   }
 
@@ -3262,11 +3265,13 @@ h4 {
   }
 
   .badge-text strong {
+    color: #fff;
     font-size: 10px;
     font-weight: 700;
   }
 
   .badge-text span {
+    color: #fff;
     font-size: 9px;
     font-weight: 400;
   }
